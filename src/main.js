@@ -337,3 +337,4 @@ async function loadData() {
 }
 
 loadData()
+window.show = show
