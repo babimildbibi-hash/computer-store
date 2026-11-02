@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Store Management System</title>
+</head>
+<body>
+    <div style="display: flex; height: 100vh; font-family: sans-serif; background: #f8fafc;">
+        <!-- Sidebar Menu -->
+        <div style="width: 250px; background: #0f172a; color: white; padding: 20px;">
+            <h2>COMPUTER STORE</h2>
+            <p style="color: #94a3b8; font-size: 14px; margin-bottom: 30px;">ระบบจัดการร้านค้า</p>
+            <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px;">
+                <li><button onclick="show('dashboard')" style="width: 100%; text-align: left; background: none; border: none; color: white; padding: 10px; cursor: pointer; border-radius: 4px;">📊 ภาพรวม</button></li>
+                <li><button onclick="show('products')" style="width: 100%; text-align: left; background: none; border: none; color: white; padding: 10px; cursor: pointer; border-radius: 4px;">📦 สินค้า</button></li>
+                <li><button onclick="show('categories')" style="width: 100%; text-align: left; background: none; border: none; color: white; padding: 10px; cursor: pointer; border-radius: 4px;">🏷️ หมวดหมู่</button></li>
+                <li><button onclick="show('customers')" style="width: 100%; text-align: left; background: none; border: none; color: white; padding: 10px; cursor: pointer; border-radius: 4px;">👥 ลูกค้า</button></li>
+                <li><button onclick="show('sales')" style="width: 100%; text-align: left; background: none; border: none; color: white; padding: 10px; cursor: pointer; border-radius: 4px;">💰 ขายสินค้า</button></li>
+                <li><button onclick="show('orders')" style="width: 100%; text-align: left; background: none; border: none; color: white; padding: 10px; cursor: pointer; border-radius: 4px;">📜 ประวัติการขาย</button></li>
+            </ul>
+        </div>
+
+        <!-- Main Content Area -->
+        <div style="flex: 1; padding: 40px; overflow-y: auto;">
+            <div id="content">
+                <!-- เนื้อหาจะเปลี่ยนไปตามเมนูที่คลิก -->
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
